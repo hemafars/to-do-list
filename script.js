@@ -48,6 +48,7 @@ function addTaskToArray( tasktext )
     // Display all tasks on page
     // عرض جميع المهام على الصفحة
     addTasksToPageFrom( tasktoarray )
+    addTaskToLocalStorageFrom( tasktoarray )
     // Print added task to console
     // طباعة المهمة المضافة في الكونسول
     console.log( task )
@@ -121,4 +122,17 @@ function addTasksToPageFrom( tasktoarray )
         console.log( divModalMialog )
     } );
 }
+function addTaskToLocalStorageFrom( tasktoarray )
+{
+    window.localStorage.setItem( "tasks", JSON.stringify( tasktoarray ) )
+}
 
+function getDataFromLocalStorge()
+{
+    let data = window.localStorage.getItem( "tasks" )
+    if ( tasks )
+    {
+        let tasks = JSON.parse( data )
+        console.log( tasks )
+    }
+}
