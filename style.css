@@ -1,0 +1,45 @@
+/* تنسيق المهمة المكتملة */
+.task-container.completed {
+    position: relative;
+    opacity: 0.8;
+}
+
+.task-container.completed::after {
+    content: "";
+    position: absolute;
+    top: 50%;
+    left: 0;
+    right: 0;
+    height: 2px;
+    background-color: #28a745;
+    transform: translateY(-50%);
+    z-index: 1;
+}
+
+.task-container.completed .modal-content {
+    background-color: #f8f9fa;
+    border-color: #28a745;
+}
+
+.task-container.completed h3 {
+    color: #6c757d;
+    position: relative;
+    z-index: 2;
+}
+
+.task-container.completed .btn {
+    position: relative;
+    z-index: 2;
+}
+
+/* تنسيقات عامة */
+.task-container {
+    margin-bottom: 15px;
+    transition: all 0.3s ease;
+}
+
+.modal-dialog {
+    border-radius: 5px;
+    overflow: hidden;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+}

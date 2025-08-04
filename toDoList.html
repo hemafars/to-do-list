@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en-ar" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-LN+7fdVzj6u52u30Kp6M/trliBMCMKTyK833zpbD+pXdCLuTusPj697FH4R/5mcr" crossorigin="anonymous">
+    <link rel="stylesheet" href="/bootstrap-5.3.7-dist/bootstrap-5.3.7-dist/css/bootstrap.css">
+    <link rel="stylesheet" href="style.css">
+
+    <title>قائمة المهام</title>
+</head>
+<body>
+    <div class="container">
+    <nav class="navbar navbar-expand-lg bg-body-tertiary">
+        <div class="container-fluid">
+        <a class="navbar-brand" href="#"></a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+      <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+        <li class="nav-item">
+          <a class="nav-link active" aria-current="page" href="index.html">الصفحة الرئيسية</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="toDoList.html">قائمة المهام</a>
+        </li>
+      </ul>
+      <form class="d-flex" role="search">
+        <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search"/>
+        <button class="btn btn-outline-success" type="submit">Search</button>
+      </form>
+    </div>
+  </div>
+</nav>
+<div class="input-group flex-nowrap">
+    <button type="submit" class="btn btn-secondary" id="add">اضف</button>
+  <input type="text" id="textBox" class="form-control" placeholder="ادخل المهمة" aria-label="Username" aria-describedby="addon-wrapping">
+</div>
+    <div id="displayTasks">
+<!-- <div class="modal-dialog "   >
+    <div class="modal-content">
+      <div class="modal-body" >
+        <h3>ارسال mail  الي الزملاء</h3>
+      </div>
+      <div class="modal-footer">
+        <button type="button" id="delet" class="btn btn-danger" data-bs-dismiss="modal">حذف</button>
+        <button type="button" id="edet" class="btn btn-primary">تعديل</button>
+        <button type="button" id="end" class="btn btn-success">انهاء</button>
+      </div>
+    </div>
+  </div> -->
+    </div>
+
+    
+</div>
+<script src="script.js"></script>
+<script src="/bootstrap-5.3.7-dist/bootstrap-5.3.7-dist/js/bootstrap.js"></script>
+</body>
+</html>
